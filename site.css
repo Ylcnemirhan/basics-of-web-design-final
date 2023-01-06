@@ -1,0 +1,541 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( rgb(45, 45, 104) ,gray) ;
+    min-height: 100vh;
+    
+    
+}
+h1{
+    letter-spacing: 20px;
+    
+    color: black;
+  text-align: center;
+  padding: 40px;
+  font-size: 75px;
+  background-image: linear-gradient(white, skyblue);
+  position: static;
+  overflow: hidden;
+ 
+}
+h3 {
+  text-align: center;
+  color: black;
+ 
+}
+h2 {
+  color: whitesmoke;
+}
+.a {
+  width: 400px;
+  margin: 100px ;
+  border: 8PX solid white;
+  border-style: outset;
+}
+header {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(163, 163, 163);
+  position: absolute;
+
+}
+.linkbar{
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.linkbar li {
+  list-style: none;
+  text-align: center;
+  margin: 150px 150px;
+
+}
+.linkbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: wavy;
+  font-size: 27px;
+}
+ .linkbar a:link {
+  text-decoration: none;
+  background-color: black;
+}
+a:visited {
+  text-decoration: none;
+}
+.linkbar a:hover {
+  background-color: black;;
+  color:skyblue;
+  
+}
+.title{
+  width: 100%;
+  height: 200px;
+}
+.giriş{
+  width: 100%;
+}
+.logo{
+  width: 100px;
+  height: 87px;
+  float: left;
+  
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  
+}
+div.galeri {
+  margin: 30px;
+  border: 1px solid black;
+  float: left;
+  width: 400px;
+}
+
+div.galeri:hover {
+  border: 1px solid rgb(250, 0, 0);
+}
+
+div.galeri img {
+  width: 100%;
+  height: 600px;
+}
+
+div.desc {
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+p {
+  margin: 20px;
+  font-size: 25px;
+  color: rgb(228, 228, 228);
+}
+.galeribaslik {
+  color: white;
+  font-size: 80px;
+  border-radius: 20px;
+}
+h2 {
+  font-size: 40px;
+  margin: 10px;
+  margin-top: 50px;
+}
+.kamera {
+width: 600px ;
+}
+h3 {
+  font-size: 25px;
+  margin: 10px;
+  margin-top: 30px;
+}
+.ortasayfa {
+  float: left;
+  width: 1200px;
+  padding-left: 10px;
+  
+}
+
+
+.parca {
+  border: 7px white;
+  border-style: solid;
+  width: 1200px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.sagsayfa {
+  float: left;
+  width: 500px;
+  background-color: whitesmoke;
+}
+.parca1{
+  width: 100%;
+  background-color: white(161, 161, 161);
+  float: left;
+  height: 241px;
+  
+}
+.ekipman {
+  text-align: center;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  width: 500px;
+  height: 2035px;
+  margin: 20px;
+  border: 5px solid rgb(255, 255, 255);
+}
+.elink {
+  text-decoration: wavy;
+  color: black;
+  font-size: 50px;
+  margin: 10px;
+}
+h3 {
+  font-size: 50px;
+}
+
+.searchcontainer button{
+  background: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.searchcontainer button:hover{
+  background-color: white;
+  
+}
+.searchcontainer{
+  float: none;
+}
+input[type=text], .searchcontainer{
+  float: none;
+  display: ruby;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  margin-left: 2px;
+  margin-bottom: 50px;
+  
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16x;
+}
+input [type=text] {
+    border: 2px solid black;
+}
+.arama{
+  text-align: center;
+}
+.elink a{
+  width: 200px;
+  height: 64px;
+}
+.slider{
+  margin-left: 400px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  width: 1024px;
+  height: 600px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgb(0, 0, 0,.8);
+
+}
+.slider img{
+  position: absolute;
+  width: 1024px;
+  height: 600px;
+  transition: all .6s;
+}
+#img1{opacity: 0;}
+#img2{opacity: 1;}
+#img3{opacity: 0;}
+
+
+.fas{
+  cursor: pointer;
+  position: absolute;
+  color: #7e7e7e;
+  z-index: 1;
+  top: 50%;
+  transform: scale(2.5);
+  transition: .4s;
+}
+.fas:hover { color: white;}
+.fa-chevron-left { left: 30px;}
+.fa-chevron-right {right: 30px;}
+.circle {
+  position: absolute;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
+  border: 2.5px solid white;
+  border-radius: 50%;
+  z-index: 1;
+  transition: .4s;
+
+}
+#circle1{
+  left: 46%;
+  background: white;
+}
+#circle2{
+  left: 50%;
+}
+#circle3{
+  left: 54%;
+}
+#sitead {
+  margin-top: 60px;
+  font-size: 75px ;
+  text-decoration: none;
+  text-shadow: .04em .04em black,
+               -.04em -.04em red ;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ color: white;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.altbaslik{
+  text-shadow: .04em .04em gray,
+               -.04em -.04em white ;
+ color: black ;
+ font-size: 100px;
+
+}
+.footer {
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 3400px;
+}
+.fsocial{
+  text-decoration: none;
+  color: white;
+  float: left;
+  margin: 75px;
+  font-size: large;
+}
+.social a{
+  flex-direction: column;
+margin: 75px;
+  font-size: large;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo1{
+  
+  width: 250px;
+  margin-left: 150px;
+  display: ruby;
+  
+}
+#renkli {
+  color: red;
+}
+.phak{
+  text-align: center;
+  color: white;
+}
+.phak h4{
+  text-align: center;
+  width: 100px;
+  
+}
+.footerg{
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 4200px; }
+.footer{
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 3500px; }
+.footeri{
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 1000px; }
+.footerhak{
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 1000px; }
+.footerc{
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 6000px; }
+.footera{
+  position: absolute;
+   text-align: center;
+   background:  rgb(45, 45, 104);
+  width: 100%;
+  height: 150px;
+  top: 5200px; }
+  .footero{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5900px; }
+  .footers{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 6300px; }
+  .footerf{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 4200px; }
+  .footerh{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5000px; }
+  .footery{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5200px; }
+  .footeru{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 2000px; }
+  .footerheykel{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 6200px; }
+  .footerde{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5200px; }
+  .footerinsan{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 4400px; }
+  .footert{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 6200px; }
+  .footersanat{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5900px; }
+  .footersuper{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 6050px; }
+  .footero{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5750px; }
+  .footerbasket{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5950px; }
+  .footergok{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 6050px; }
+  .footerkis{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5150px; }
+  .footernoel{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 2050px; }
+  .footersiyah{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 4450px; }
+  .footerdoga{
+    position: absolute;
+     text-align: center;
+     background:  rgb(45, 45, 104);
+    width: 100%;
+    height: 150px;
+    top: 5550px; }
